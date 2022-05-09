@@ -11,7 +11,7 @@ import { AdminService } from 'src/app/_services/admin.service';
 })
 export class UserManagementComponent implements OnInit {
   users: Partial<User[]>;
-  bsModalRef: BsModalRef
+  bsModalRef: BsModalRef;
 
   constructor(private adminService: AdminService, private modalService: BsModalService) { }
 
@@ -72,7 +72,5 @@ export class UserManagementComponent implements OnInit {
     })
     return roles;
   }
-
-
 
 }
